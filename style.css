@@ -1,0 +1,253 @@
+body{
+    background-color: hsl(185, 41%, 84%)
+}
+
+
+h1,
+p{
+    font-family: 'Space Mono', monospace;
+}
+.container{
+    width: 100%;
+    display: grid;
+}
+
+.container .contents{
+    width: 100%;
+}
+
+.svg_Logo{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.container .contents .row .column h1{
+    text-align: center;
+   
+    margin-top: 20px;
+ 
+}
+
+
+
+.container .contents .row .column .Bill{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+    
+}
+
+
+.container .contents .row .column .Bill input{
+    background-color: hsl(189, 41%, 97%) ;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    margin-right: 5px;
+    color:hsl(183, 100%, 15%);
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    
+}
+
+.container .contents .row .column .Bill #buttons{
+    margin-left: 15px;
+    
+}
+
+.container .contents .row .column .Bill #buttons input{
+    width: 120px;
+    font-family: 'Space Mono', monospace;
+    
+    
+    
+}
+
+
+.container .contents .row .column .Bill #buttons .row #btnValue,
+#buttons .row .custom{
+   
+margin:0 10px 10px 10px;
+background-color: hsl(183, 100%, 15%);
+height: 40px;
+
+}
+
+.container .contents .row .column .Bill #buttons .row #btnValue[value] {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: white;
+}
+
+.container .contents .row .column .Bill #buttons .row #btnValue:hover{
+    cursor: pointer;
+    
+    background-color: #26c2ad
+    ;
+    color:hsl(183, 100%, 15%);
+}
+
+#buttons .row .custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%)
+}
+
+
+
+.Amount{
+    border-radius: 10px;
+    background-color: hsl(183, 100%, 15%);
+    width: 100%;
+    height: 350px;
+}
+
+
+
+.Amount .pOfAmout{
+    margin-left:60px;color: white;
+    margin-top: 40px;
+}
+
+#rowOfButton{
+    width: 100%;
+    margin-left: 40px;
+}
+
+#rowOfButton button{
+    font-size: 24px;
+    width: 72%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #26c2ad;
+    color:  hsl(183, 100%, 15%);
+}
+
+
+#rowOfButton button:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+
+
+
+#peopleNumber,
+#BillValue{
+      border: #26c2ad 2px solid;
+      color:hsl(183, 100%, 15%); 
+      font-family: 'Space Mono', monospace;
+  }
+
+
+  .error-message{ /* the error message which will be beside the "Number of people" word */
+    display: inline; 
+    color: red;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .error-messages{ /* the error message which will be beside the bill word */
+    color: red;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Mobile First Design*/
+@media (min-width:375px) and (max-width:767px){
+   .container,
+   .container .contents .row .column,
+   .container .contents .row .column .Amount{
+       width: 100%;
+   }
+
+   .error-message,/* the error message which will be beside the "Number of people" word */
+  .error-messages{/* the error message which will be beside the bill word */
+  display: block;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+#BillValue{
+    margin-left: 10px;
+    display: block;
+  }
+
+  .svg_Logo{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+}
+@media (min-width:1440px){
+    .container{
+        width: 100%;
+       
+    }
+    .container .contents .row .splt{
+       
+        margin-left: 500px;
+    }
+
+    .container .contents .row #billAndAmount{
+        
+        display: flex;
+        width: 900px;
+        height: 300px;
+        margin-left: 100px;
+       
+        
+        
+        
+    }
+    
+
+
+    .container .contents .row #billAndAmount .Amount{
+        height: 370px;
+        
+    }
+
+    #billAndAmount{
+        background-color:white;
+        border-radius: 15px;
+        width: 800px;
+        
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+ 
+
+      #peopleNumber{
+        width: 400px;
+        margin-left: 30px;
+      }
+      #BillValue{
+          width: 400px;
+          margin-left: 15px;
+      }
+
+
+}
