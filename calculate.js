@@ -53,10 +53,10 @@ let theBillAmount,
     document.getElementById("BillValue").style.cssText="border:#26c2ad 2px solid; border-radius:15px";
     
   }
-  if(customValue > 0){
-    theValueOfTip  = (customValue*theBillAmount)/100
-  }else{
+  if(customValue < 0 || customValue == 0){
     document.getElementById("custom").style.cssText="border:red 2px solid; border-radius:15px;"
+  } else{
+    document.getElementById("custom").style.cssText="border:#26c2ad 2px solid; border-radius:15px;"
   }
     
      //The end of validation
